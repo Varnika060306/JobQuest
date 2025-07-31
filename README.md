@@ -61,6 +61,7 @@ Built as part of my [GSSoC 2025](https://gssoc.girlscript.tech/) application, th
 ```bash
 git clone https://github.com/YOUR_USERNAME/JobQuest.git
 cd JobQuest
+```
 
 ### 2. Start Frontend (React)
 
@@ -68,24 +69,22 @@ cd JobQuest
 cd client
 npm install
 npm start
+```
 
-### ✅ Step 3: **Start Backend (FastAPI)**
-
-```markdown
 ### 3. Start Backend (FastAPI)
 
 ```bash
 cd ../server
 pip install -r requirements.txt
 uvicorn main:app --reload
+```
 
 
 ---
 
-##✅ Future Ideas
+## ✅ Future Ideas
 
 ```markdown
-### 🤖 Future Ideas
 
 Here are some future enhancements that can make JobQuest even more powerful:
 
@@ -93,6 +92,7 @@ Here are some future enhancements that can make JobQuest even more powerful:
 - 🧠 Match resumes against **multiple job roles**
 - ✍️ GPT-powered **resume rewriting suggestions**
 - 📊 Add charts to visualize **resume-JD overlap**
+```
 
 ---
 
