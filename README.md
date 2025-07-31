@@ -1,3 +1,4 @@
+
 # 🧠 JobQuest
 
 > AI-powered Resume vs Job Description Matcher  
@@ -49,8 +50,9 @@ Built as part of my [GSSoC 2025](https://gssoc.girlscript.tech/) application, th
 
 ## 📸 Screenshots
 
-> Add them before uploading final version  
-> (e.g. skill comparison view, uploaded files, match %)
+<img width="1470" height="956" alt="Screenshot 2025-08-01 at 1 00 04 AM" src="https://github.com/user-attachments/assets/cddd97a9-a3bc-4012-832b-0e765b945366" />
+<img width="1470" height="956" alt="Screenshot 2025-08-01 at 1 00 00 AM" src="https://github.com/user-attachments/assets/e1df8857-980b-4147-bb12-77121c16a637" />
+<img width="1470" height="956" alt="Screenshot 2025-08-01 at 12 59 54 AM" src="https://github.com/user-attachments/assets/a3d65ee4-c0a1-4ce3-9f59-5e5550bea36e" />
 
 ---
 
