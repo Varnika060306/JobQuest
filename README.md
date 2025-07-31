@@ -79,12 +79,13 @@ cd ../server
 pip install -r requirements.txt
 uvicorn main:app --reload
 
+
 ---
 
-### ✅ Future Ideas
+##✅ Future Ideas
 
 ```markdown
-## 🤖 Future Ideas
+### 🤖 Future Ideas
 
 Here are some future enhancements that can make JobQuest even more powerful:
 
