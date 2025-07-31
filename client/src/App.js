@@ -17,6 +17,7 @@ function App() {
   const [responseMatchingSkills, setResponseMatchingSkills] = useState([]);
   const [responseMissingSkills, setResponseMissingSkills] = useState([]);
   const [responseSuggestions, setResponseSuggestions] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleResumeChange = (e) => {
     setResume(e.target.files[0]);
@@ -35,7 +36,7 @@ function App() {
       alert('Please upload both resume and job description files.');
       return;
     }
-
+    setIsLoading(true); // 🌀 Start spinner
     const formData = new FormData();
     formData.append('resume', resume);
     formData.append('jd', jd);
@@ -64,6 +65,7 @@ function App() {
       console.error('Error:', error);
       setResult('Something went wrong. Try again later.');
     }
+    setIsLoading(false); // ✅ Stop spinner
   };
 
   return (
@@ -99,7 +101,16 @@ function App() {
           />
         </div>
 
-        <button type="submit">🚀 Submit</button>
+        {isLoading ? (
+          <div className="text-center mt-4">
+            <span className="inline-block w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></span>
+            <p className="text-sm text-gray-600 mt-2">Comparing resume and job description...</p>
+          </div>
+        ) : (
+          <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+             Submit
+          </button>
+           )}
       </form>
 
       {result && (
